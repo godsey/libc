@@ -21,6 +21,12 @@ s! {
         pub imr_multiaddr: in_addr,
         pub imr_interface: in_addr,
     }
+    
+    pub struct ip_mreqn {
+        pub imr_multiaddr: in_addr,
+        pub imr_address: in_addr,
+        pub imr_interface: in_addr,
+    }
 
     pub struct sockaddr {
         pub sa_family: sa_family_t,
